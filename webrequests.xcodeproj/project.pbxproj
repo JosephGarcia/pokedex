@@ -12,6 +12,7 @@
 		8C0834B11CAE139B00A8925F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834AF1CAE139B00A8925F /* Main.storyboard */; };
 		8C0834B31CAE139B00A8925F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834B21CAE139B00A8925F /* Assets.xcassets */; };
 		8C0834B61CAE139B00A8925F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834B41CAE139B00A8925F /* LaunchScreen.storyboard */; };
+		8C0834C11CAE252900A8925F /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834C01CAE252900A8925F /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C0834B21CAE139B00A8925F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0834B51CAE139B00A8925F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C0834B71CAE139B00A8925F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0834C01CAE252900A8925F /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,9 @@
 		8C0834AA1CAE139B00A8925F /* webrequests */ = {
 			isa = PBXGroup;
 			children = (
+				8C0834BD1CAE1C0C00A8925F /* Model */,
 				8C0834AB1CAE139B00A8925F /* AppDelegate.swift */,
+				8C0834C01CAE252900A8925F /* pokemon.csv */,
 				8C0834AD1CAE139B00A8925F /* ViewController.swift */,
 				8C0834AF1CAE139B00A8925F /* Main.storyboard */,
 				8C0834B21CAE139B00A8925F /* Assets.xcassets */,
@@ -62,6 +66,13 @@
 				8C0834B71CAE139B00A8925F /* Info.plist */,
 			);
 			path = webrequests;
+			sourceTree = "<group>";
+		};
+		8C0834BD1CAE1C0C00A8925F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +135,7 @@
 			files = (
 				8C0834B61CAE139B00A8925F /* LaunchScreen.storyboard in Resources */,
 				8C0834B31CAE139B00A8925F /* Assets.xcassets in Resources */,
+				8C0834C11CAE252900A8925F /* pokemon.csv in Resources */,
 				8C0834B11CAE139B00A8925F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
