@@ -42,7 +42,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2zj-Cb-NmC">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonCell" id="2zj-Cb-NmC" customClass="PokemonCell" customModule="webrequests" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -75,6 +75,10 @@
                                             <constraint firstAttribute="trailing" secondItem="Hod-PY-ull" secondAttribute="trailing" id="v2W-fQ-mA8"/>
                                             <constraint firstItem="Hod-PY-ull" firstAttribute="leading" secondItem="2zj-Cb-NmC" secondAttribute="leading" id="vf6-oH-vu2"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="pokemonImg" destination="i5c-Kx-rQu" id="Kpv-7e-lkj"/>
+                                            <outlet property="pokemonName" destination="Hod-PY-ull" id="6yJ-Jw-WhE"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -97,6 +101,9 @@
                             <constraint firstItem="Asn-X4-fZH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAS-FD-Ddu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="Asn-X4-fZH" id="9BF-pO-m0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
