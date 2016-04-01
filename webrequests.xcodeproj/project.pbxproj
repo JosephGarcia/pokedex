@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C06C1A51CAF1CDA00C6C584 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C06C1A41CAF1CDA00C6C584 /* csv.swift */; };
 		8C0834AC1CAE139B00A8925F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0834AB1CAE139B00A8925F /* AppDelegate.swift */; };
 		8C0834AE1CAE139B00A8925F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0834AD1CAE139B00A8925F /* ViewController.swift */; };
 		8C0834B11CAE139B00A8925F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834AF1CAE139B00A8925F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C06C1A41CAF1CDA00C6C584 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		8C0834A81CAE139B00A8925F /* webrequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webrequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0834AB1CAE139B00A8925F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C0834AD1CAE139B00A8925F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C06C1A61CAF1D1600C6C584 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C0834AD1CAE139B00A8925F /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8C06C1A71CAF1D5100C6C584 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C06C1A41CAF1CDA00C6C584 /* csv.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		8C06C1A81CAF1D6500C6C584 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C0834C01CAE252900A8925F /* pokemon.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		8C08349F1CAE139B00A8925F = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +86,13 @@
 		8C0834AA1CAE139B00A8925F /* webrequests */ = {
 			isa = PBXGroup;
 			children = (
-				8C0834C41CAE336400A8925F /* Views */,
 				8C0834BD1CAE1C0C00A8925F /* Model */,
-				8C0834AB1CAE139B00A8925F /* AppDelegate.swift */,
-				8C0834C01CAE252900A8925F /* pokemon.csv */,
-				8C0834AD1CAE139B00A8925F /* ViewController.swift */,
+				8C0834C41CAE336400A8925F /* Views */,
+				8C06C1A61CAF1D1600C6C584 /* Controllers */,
+				8C06C1A71CAF1D5100C6C584 /* Util */,
+				8C06C1A81CAF1D6500C6C584 /* Resources */,
 				8C0834AF1CAE139B00A8925F /* Main.storyboard */,
+				8C0834AB1CAE139B00A8925F /* AppDelegate.swift */,
 				8C0834B21CAE139B00A8925F /* Assets.xcassets */,
 				8C0834B41CAE139B00A8925F /* LaunchScreen.storyboard */,
 				8C0834B71CAE139B00A8925F /* Info.plist */,
@@ -165,6 +192,7 @@
 				8C0834C61CAE338500A8925F /* PokemonCell.swift in Sources */,
 				8C0834AC1CAE139B00A8925F /* AppDelegate.swift in Sources */,
 				8C0834C31CAE2B0300A8925F /* Pokemon.swift in Sources */,
+				8C06C1A51CAF1CDA00C6C584 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +340,7 @@
 				8C0834BC1CAE139B00A8925F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

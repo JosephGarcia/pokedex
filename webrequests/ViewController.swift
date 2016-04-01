@@ -12,11 +12,33 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     @IBOutlet weak var collection: UICollectionView!
     
+    var pokemon = [Pokemon]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         collection.delegate = self
         collection.dataSource = self
+        
+        parsePokemonCSV()
+    }
+    
+    func parsePokemonCSV() {
+        
+        let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            
+            for row in rows {
+                let pokeId = Int(row["id"]!)!
+                let name = row["identifier"]!
+                let poke = Pokemon(name: name, id: pokeId)
+                pokemon.append(poke)
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,10 +48,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokemonCell", forIndexPath: indexPath) as? PokemonCell {
-            if indexPath.row > 1 {
-                let pokemon = Pokemon(name: "test", id: indexPath.row)
-                cell.configureCell(pokemon)
-            }
+
+            let poke = self.pokemon[indexPath.row]
+            cell.configureCell(poke)
+        
             return cell
             
         } else {
