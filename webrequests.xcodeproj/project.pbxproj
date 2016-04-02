@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8C06C1A51CAF1CDA00C6C584 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C06C1A41CAF1CDA00C6C584 /* csv.swift */; };
+		8C06C1AA1CAF291200C6C584 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C06C1A91CAF291200C6C584 /* pokemon.ttf */; };
+		8C06F0531CAF702500698B2D /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8C06F0521CAF702500698B2D /* music.mp3 */; };
 		8C0834AC1CAE139B00A8925F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0834AB1CAE139B00A8925F /* AppDelegate.swift */; };
 		8C0834AE1CAE139B00A8925F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0834AD1CAE139B00A8925F /* ViewController.swift */; };
 		8C0834B11CAE139B00A8925F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0834AF1CAE139B00A8925F /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		8C06C1A41CAF1CDA00C6C584 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		8C06C1A91CAF291200C6C584 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		8C06F0521CAF702500698B2D /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		8C0834A81CAE139B00A8925F /* webrequests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webrequests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0834AB1CAE139B00A8925F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C0834AD1CAE139B00A8925F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		8C06C1A81CAF1D6500C6C584 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C06F0521CAF702500698B2D /* music.mp3 */,
+				8C06C1A91CAF291200C6C584 /* pokemon.ttf */,
 				8C0834C01CAE252900A8925F /* pokemon.csv */,
 			);
 			name = Resources;
@@ -174,7 +180,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C06C1AA1CAF291200C6C584 /* pokemon.ttf in Resources */,
 				8C0834B61CAE139B00A8925F /* LaunchScreen.storyboard in Resources */,
+				8C06F0531CAF702500698B2D /* music.mp3 in Resources */,
 				8C0834B31CAE139B00A8925F /* Assets.xcassets in Resources */,
 				8C0834C11CAE252900A8925F /* pokemon.csv in Resources */,
 				8C0834B11CAE139B00A8925F /* Main.storyboard in Resources */,
