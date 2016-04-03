@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01806DAE791A3463EC154D03 /* Pods_webrequests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D253AC2BE6A0B65D6ECF287 /* Pods_webrequests.framework */; };
+		8C05A3F01CB1152600ECB8F5 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C05A3EF1CB1152600ECB8F5 /* constants.swift */; };
 		8C06708A1CAFD03A00B0D9ED /* PokemonDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0670891CAFD03A00B0D9ED /* PokemonDetailsVC.swift */; };
 		8C06C1A51CAF1CDA00C6C584 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C06C1A41CAF1CDA00C6C584 /* csv.swift */; };
 		8C06C1AA1CAF291200C6C584 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C06C1A91CAF291200C6C584 /* pokemon.ttf */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		5A1BA368DC0718B0C9410FAB /* Pods-webrequests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-webrequests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-webrequests/Pods-webrequests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D253AC2BE6A0B65D6ECF287 /* Pods_webrequests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_webrequests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C05A3EF1CB1152600ECB8F5 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		8C0670891CAFD03A00B0D9ED /* PokemonDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailsVC.swift; sourceTree = "<group>"; };
 		8C06C1A41CAF1CDA00C6C584 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		8C06C1A91CAF291200C6C584 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				8C06C1A41CAF1CDA00C6C584 /* csv.swift */,
+				8C05A3EF1CB1152600ECB8F5 /* constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				8C0834AE1CAE139B00A8925F /* ViewController.swift in Sources */,
 				8C0834C61CAE338500A8925F /* PokemonCell.swift in Sources */,
 				8C0834AC1CAE139B00A8925F /* AppDelegate.swift in Sources */,
+				8C05A3F01CB1152600ECB8F5 /* constants.swift in Sources */,
 				8C0834C31CAE2B0300A8925F /* Pokemon.swift in Sources */,
 				8C06C1A51CAF1CDA00C6C584 /* csv.swift in Sources */,
 				8C06708A1CAFD03A00B0D9ED /* PokemonDetailsVC.swift in Sources */,
