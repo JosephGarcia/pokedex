@@ -16,7 +16,7 @@ class PokemonDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = pokemon.name
+//        nameLabel.text = pokemon.name
         // Do any additional setup after loading the view.
     }
 
