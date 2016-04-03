@@ -175,6 +175,9 @@
                                             <constraint firstAttribute="height" constant="22" id="iwc-6h-2kI"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="3vJ-gd-5R2" eventType="touchUpInside" id="kMW-EZ-yFM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,10 +213,10 @@
                                                     <constraint firstAttribute="width" constant="120" id="r3v-8J-KX3"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Waistcoat tilde master cleanse chicharrones, knausgaard dreamcatcher gastropub DIY meditation kinfolk church-key." lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VTU-o8-wUW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waistcoat tilde master cleanse chicharrones, knausgaard dreamcatcher gastropub DIY meditation kinfolk church-key." lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VTU-o8-wUW">
                                                 <rect key="frame" x="125" y="0.0" width="435" height="120"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -366,6 +369,18 @@
                             <constraint firstItem="Kqn-hC-4Ev" firstAttribute="leading" secondItem="HRX-Qx-qpV" secondAttribute="leading" id="qQO-90-gFz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="5oY-bi-miH" id="dwH-iE-AcV"/>
+                        <outlet property="nextEvolutionLbl" destination="hSf-ql-Dyp" id="6IB-d0-EyX"/>
+                        <outlet property="pokemonCurrentEvo" destination="gdg-fb-H9w" id="MRm-Rw-uAX"/>
+                        <outlet property="pokemonDefense" destination="QIa-VH-7x0" id="Mev-ft-rc0"/>
+                        <outlet property="pokemonDescription" destination="VTU-o8-wUW" id="3T4-oo-1Hm"/>
+                        <outlet property="pokemonHeight" destination="RDd-Ec-Epk" id="W3h-T4-wkz"/>
+                        <outlet property="pokemonId" destination="YHz-wa-htQ" id="R9E-GC-rC5"/>
+                        <outlet property="pokemonImg" destination="VOq-eS-HzP" id="kpy-nH-Ybo"/>
+                        <outlet property="pokemonNextEvo" destination="eDn-hu-Xsb" id="m2W-Qc-DOl"/>
+                        <outlet property="pokemonType" destination="jJt-5v-loZ" id="yoa-ae-p7n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7I-ye-ycr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,17 @@ import UIKit
 class PokemonDetailsVC: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var pokemonImg: UIImageView!
+    @IBOutlet weak var pokemonDescription: UILabel!
+    @IBOutlet weak var pokemonType: UILabel!
+    @IBOutlet weak var pokemonDefense: UILabel!
+    @IBOutlet weak var pokemonHeight: UILabel!
+    @IBOutlet weak var pokemonId: UILabel!
+    @IBOutlet weak var pokemonCurrentEvo: UIImageView!
+    @IBOutlet weak var pokemonNextEvo: UIImageView!
+    @IBOutlet weak var nextEvolutionLbl: UILabel!
+    
+    
     var pokemon: Pokemon!
 
     override func viewDidLoad() {
@@ -25,15 +36,9 @@ class PokemonDetailsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    */
+    
 
 }
