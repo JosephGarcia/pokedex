@@ -339,7 +339,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kqn-hC-4Ev">
                                 <rect key="frame" x="0.0" y="433" width="600" height="39"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Evolution:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-ql-Dyp">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-ql-Dyp">
                                         <rect key="frame" x="134" y="9" width="332" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -348,6 +348,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="hSf-ql-Dyp" firstAttribute="centerX" secondItem="Kqn-hC-4Ev" secondAttribute="centerX" id="JMj-Ap-wOb"/>
+                                    <constraint firstItem="hSf-ql-Dyp" firstAttribute="centerY" secondItem="Kqn-hC-4Ev" secondAttribute="centerY" id="WZO-h8-5O5"/>
                                     <constraint firstAttribute="height" constant="39" id="ffb-BC-xGn"/>
                                 </constraints>
                             </view>
@@ -372,6 +374,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="5oY-bi-miH" id="dwH-iE-AcV"/>
                         <outlet property="nextEvolutionLbl" destination="hSf-ql-Dyp" id="6IB-d0-EyX"/>
+                        <outlet property="pokemonAttack" destination="nz8-gn-HLV" id="nJj-Cu-pVg"/>
                         <outlet property="pokemonCurrentEvo" destination="gdg-fb-H9w" id="MRm-Rw-uAX"/>
                         <outlet property="pokemonDefense" destination="QIa-VH-7x0" id="Mev-ft-rc0"/>
                         <outlet property="pokemonDescription" destination="VTU-o8-wUW" id="3T4-oo-1Hm"/>
@@ -380,6 +383,7 @@
                         <outlet property="pokemonImg" destination="VOq-eS-HzP" id="kpy-nH-Ybo"/>
                         <outlet property="pokemonNextEvo" destination="eDn-hu-Xsb" id="m2W-Qc-DOl"/>
                         <outlet property="pokemonType" destination="jJt-5v-loZ" id="yoa-ae-p7n"/>
+                        <outlet property="pokemonWeight" destination="7SR-O3-gHl" id="P2N-Kt-SpJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7I-ye-ycr" userLabel="First Responder" sceneMemberID="firstResponder"/>

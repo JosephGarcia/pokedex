@@ -16,6 +16,8 @@ class PokemonDetailsVC: UIViewController {
     @IBOutlet weak var pokemonType: UILabel!
     @IBOutlet weak var pokemonDefense: UILabel!
     @IBOutlet weak var pokemonHeight: UILabel!
+    @IBOutlet weak var pokemonAttack: UILabel!
+    @IBOutlet weak var pokemonWeight: UILabel!
     @IBOutlet weak var pokemonId: UILabel!
     @IBOutlet weak var pokemonCurrentEvo: UIImageView!
     @IBOutlet weak var pokemonNextEvo: UIImageView!
@@ -28,10 +30,38 @@ class PokemonDetailsVC: UIViewController {
         super.viewDidLoad()
         
         nameLabel.text = pokemon.name.capitalizedString
-        pokemonImg.image = UIImage(named: "\(pokemon.pokemonId)")
+        let img = UIImage(named: String(pokemon.pokemonId))
+        pokemonImg.image = img
+        pokemonCurrentEvo.image = img
+        
         
         pokemon.downloadPokemonDetails { () -> () in
             //this code will load when download is complete
+            self.updateUI()
+        }
+    }
+    
+    func updateUI(){
+        pokemonDescription.text = pokemon.description
+        pokemonType.text = pokemon.type
+        pokemonDefense.text = pokemon.defense
+        pokemonHeight.text = pokemon.height
+        pokemonWeight.text = pokemon.weight
+        pokemonAttack.text = pokemon.attack
+        
+        if pokemon.nextEvolutionId == "" {
+            nextEvolutionLbl.text = "This Pokemon does not evolve any further"
+            pokemonNextEvo.hidden = true
+        } else {
+            pokemonNextEvo.hidden = false
+            pokemonNextEvo.image = UIImage(named: String(pokemon.nextEvolutionId))
+            var str = "Next Evolution: \(pokemon.nextEvolution)"
+            
+            if pokemon.nextEvolutionLevel != "" {
+                str += " - LVL \(pokemon.nextEvolutionLevel)"
+            }
+            
+            nextEvolutionLbl.text = str
         }
     }
 
